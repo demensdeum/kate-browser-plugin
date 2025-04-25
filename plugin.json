@@ -1,0 +1,15 @@
+{
+  "KPlugin": {
+    "Id": "katebrowserplugin",
+    "Name": "Web Browser",
+    "Description": "Adds a dockable web browser to Kate",
+    "Version": "1.0",
+    "Authors": [
+      {
+        "Name": "Ilia Prokhorov",
+        "Email": "demensdeum@gmail.com"
+      }
+    ],
+    "License": "MIT"
+  }
+}
