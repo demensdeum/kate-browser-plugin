@@ -22,6 +22,11 @@ MyBrowserPluginView::MyBrowserPluginView(MyBrowserPlugin *plugin, KTextEditor::M
     QLineEdit *addressBar = new QLineEdit;
     m_webView = new QWebEngineView;
 
+    QString initialUrl = QStringLiteral("https://demensdeum.com");
+    addressBar->setText(initialUrl);
+    m_webView->setUrl(QUrl(initialUrl));
+    m_webView->load(QUrl(initialUrl));
+
     layout->addWidget(addressBar);
     layout->addWidget(m_webView);
     content->setLayout(layout);
